@@ -3,7 +3,8 @@ import 'package:url_launcher/url_launcher.dart';
 
 launchEmail() async {
   Uri emailLaunchUri = Uri(
-    scheme: 'mailto:$emailID',
+    scheme: 'mailto',
+    path: emailID,
   );
   if (await canLaunchUrl(emailLaunchUri)) {
     await launchUrl(emailLaunchUri);
