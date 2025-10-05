@@ -7,6 +7,6 @@ channel = "stable"
 
 [build]
 command = """
-    flutter build web --release --web-renderer html
+    flutter build web --release
   """
 publish = "build/web"
