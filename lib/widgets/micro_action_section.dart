@@ -19,7 +19,7 @@ class MicroActionSection extends StatelessWidget {
               return Flex(
                 direction: isMobile ? Axis.vertical : Axis.horizontal,
                 mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
+                crossAxisAlignment: isMobile ? CrossAxisAlignment.stretch : CrossAxisAlignment.start,
                 children: [
                   _buildActionCard(
                     icon: Icons.eco,

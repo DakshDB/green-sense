@@ -14,7 +14,7 @@ class PersonalRelevanceSection extends StatelessWidget {
           return Flex(
             direction: isMobile ? Axis.vertical : Axis.horizontal,
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _buildFactCard(
                 icon: Icons.favorite_border,

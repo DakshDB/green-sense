@@ -24,7 +24,30 @@ class HeroSection extends StatelessWidget {
             style: AppStyles.subtitle,
           ),
           const SizedBox(height: 40),
-          Image.network('https://placehold.co/1200x600/10B981/ffffff?text=Inspiring+Future'),
+          Container(
+            constraints: const BoxConstraints(maxWidth: 1200, maxHeight: 600),
+            decoration: BoxDecoration(
+              color: AppColors.primaryColor.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.eco,
+                    size: 120,
+                    color: AppColors.primaryColor,
+                  ),
+                  const SizedBox(height: 20),
+                  Text(
+                    'Inspiring Future',
+                    style: AppStyles.headline2.copyWith(color: AppColors.primaryColor),
+                  ),
+                ],
+              ),
+            ),
+          ),
           const SizedBox(height: 40),
           ElevatedButton(
             onPressed: () {},
